@@ -1,0 +1,232 @@
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #FFF;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		font-weight: 300;
+		color: #000000;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		color: #8dc63f;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+		color: #8dc63f;
+	}
+	
+	a
+	{
+		color: #8dc63f;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 1200px;
+	}
+	
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+    #banner
+    {
+        overflow: hidden;
+        padding: 5em 0em;
+        background: url(images/banner.jpg) no-repeat center;
+        background-size: cover;
+        border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+
+	#page
+	{
+		position: relative;
+		overflow: hidden;
+		padding: 8em 0em;
+	}
+
+	#featured
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 1px solid rgba(0,0,0,0.1);
+	}
+	
+	#featured .align-left
+	{
+		float: left;
+		width: 384px;
+		padding-top: 1em;
+		text-align: center;
+	}
+	
+	#featured .fa
+	{
+		font-size: 14em;
+		color: #8dc63f;
+	}
+
+	#featured .align-right
+	{
+		float: right;
+		width: 792px;
+		font-size: 1.4em;
+	}
+
+
+	.box
+	{
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
+	
+	.box span
+	{
+		margin: 0;
+		padding: 1em 1em;
+		background: #8dc63f;
+		display: block;
+		line-height: 3em;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.2em;
+		color: #ffffff;
+	}
+
+	/*Baner*/ 
+	.banner {
+		width: 2700px;
+		height: 550px; 
+		position: relative;
+		overflow: hidden;
+	}
+    
+	/*Coche*/ 
+	.car {
+		position: absolute;
+		width: 400px;
+		height: 250px;
+		top: 490px;
+		left: 0;
+		animation: moveCar 4s linear infinite;
+	}
+	
+	
+	@keyframes moveCar {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(2000px); 
+		}
+	}
+	
+	.boxA {
+		animation: rotateAnimation 1s linear infinite; /* Ajusta la duración y otras propiedades según tus preferencias */
+		transform-origin: center; /* Define el punto de origen de la rotación en el centro del elemento */
+	  }
+	  
+	  @keyframes rotateAnimation {
+		0% {
+		  transform: rotate(0deg); /* La imagen estará sin rotación al principio */
+		}
+		100% {
+		  transform: rotate(360deg); /* La imagen realizará una rotación completa */
+		}
+	  }
+	  .box {
+		transition: transform 1s; /* Transición suave de 0.3 segundos */
+	  }
+	  
+	  .box:hover {
+		transform: rotate(360deg); /* Gira 360 grados cuando se pasa el ratón por encima */
+	  }
+	  
+	  .boxC {
+		transition: transform 1s; /* Transición suave de 0.3 segundos */
+	  }
+	  
+	  .boxC:hover {
+		transform: rotate(360deg); /* Gira 360 grados cuando se pasa el ratón por encima */
+		background-color: #bbc7b7; /* Cambia el fondo a rojo al pasar el ratón por encima */
+
+	  }
